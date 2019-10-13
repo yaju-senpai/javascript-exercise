@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.wrap {
+	position: relative;
+}
+.list {
+	width: 800px;
+	height: 400px;
+	list-style: none;
+	position: relative;
+}
+.item {
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.item:nth-child(1) {
+	background-color: black;
+}
+.item:nth-child(2) {
+	background-color: red;
+}
+.item:nth-child(3) {
+	background-color: pink;
+}
+.item:nth-child(4) {
+	background-color: green;
+}
+.item:nth-child(5) {
+	background-color: aqua;
+}
+.item.active {
+	opacity: 1;
+	z-index: 10;
+}
+.point-list {
+	list-style: none;
+	z-index: 100;
+	position: absolute;
+	left: 650px;
+	bottom: 20px;
+}
+.point {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 100%;
+	border: solid 1px white;
+	float: left;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.point.active {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.btn {
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	top: 150px;
+	z-index: 100;
+	cursor: pointer;
+}
+#goPrev {
+	left: 0;
+}
+#goNext {
+	left: 720px;
+}
